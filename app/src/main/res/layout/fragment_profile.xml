@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/person"
+        android:text="Profile"
+        android:id="@+id/profile_img"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerCrop"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="10dp"
+        android:id="@+id/username_edit_text"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        android:elevation="15dp"
+        android:background="@drawable/edit_text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:padding="10dp"
+        android:id="@+id/phone_edit_txt"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:enabled="false"
+        android:elevation="15dp"
+        android:background="@drawable/edit_text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:id="@+id/profile_update"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/Profile_progress_circular"
+            android:layout_marginTop="10dp"
+            android:indeterminateTint="@color/black"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="Logout"
+        android:id="@+id/logout"
+        />
+
+
+</LinearLayout>

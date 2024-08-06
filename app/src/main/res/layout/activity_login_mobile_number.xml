@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".LoginMobileNumber">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/circular_shape"
+            android:layout_margin="10dp"
+
+            android:backgroundTint="#EC4E4E"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="1"
+                android:layout_centerInParent="true"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/circular_shape"
+            android:layout_margin="10dp"
+            android:backgroundTint="#DFA1A1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/circular_shape"
+            android:layout_margin="10dp"
+            android:backgroundTint="#D5AEAE"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="190dp"
+        android:src="@drawable/img"
+        app:tint="@color/black" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Mobile Number"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:letterSpacing="0.08"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryCodeHolder"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="phone"
+            android:id="@+id/log_mobile"
+            android:elevation="15dp"
+            android:background="@drawable/edit_text"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Send Otp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/send_otp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/progress_circular"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:indeterminateTint="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
